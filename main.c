@@ -10,7 +10,7 @@ void swap(int* a, int* b)
 void bubble_sort(int* array, int size)
 {
     int i, j;
-    for (i = 0; i < size - 1; i++) {
+    for (i = 1; i < size; i++) {
         for (j = 0; j < size - i; j++) {
             if (array[j] > array[j + 1]) {
                 swap(&array[j], &array[j + 1]);
@@ -22,7 +22,7 @@ void bubble_sort(int* array, int size)
 
 int main()
 {
-    int array[100] = {10, 15, 5, 4, 21, 7};
+    int array[100] = {21, 15, 10, 7, 5, 4};
 
     bubble_sort(array, 6);
 
